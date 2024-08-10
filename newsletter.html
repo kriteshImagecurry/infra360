@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --body-padding-sm: 2rem;
+        --body-padding-md: 6rem;
+        --body-padding-lg: 8rem;
+        --body-padding-xl: 12rem;
+        --body-padding-2xl: 16rem;
+        --body-padding-3xl: 18rem;
+        --body-padding: 32rem;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+
+      .footer-bg {
+        background: url("./assets/images/blog-footer.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .body-padding {
+        padding: 0 var(--body-padding-sm);
+      }
+      .body-padding-l {
+        padding-left: var(--body-padding-sm);
+      }
+      .body-padding-r {
+        padding-right: var(--body-padding-sm);
+      }
+
+      @media screen and (min-width: 640px) {
+        .body-padding {
+          padding: 0 var(--body-padding-sm);
+        }
+        .body-padding-l {
+          padding-left: var(--body-padding-sm);
+        }
+        .body-padding-r {
+          padding-right: var(--body-padding-sm);
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .body-padding {
+          padding: 0 var(--body-padding-lg);
+        }
+        .body-padding-l {
+          padding-left: var(--body-padding-lg);
+        }
+        .body-padding-r {
+          padding-right: var(--body-padding-lg);
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .body-padding {
+          padding: 0 var(--body-padding-md);
+        }
+        .body-padding-l {
+          padding-left: var(--body-padding-md);
+        }
+        .body-padding-r {
+          padding-right: var(--body-padding-md);
+        }
+        p {
+          font-size: large;
+        }
+      }
+      @media screen and (min-width: 1280px) {
+        .body-padding {
+          padding: 0 var(--body-padding-xl);
+        }
+        .body-padding-l {
+          padding-left: var(--body-padding-xl);
+        }
+        .body-padding-r {
+          padding-right: var(--body-padding-xl);
+        }
+        p {
+          font-size: large;
+        }
+      }
+      @media screen and (min-width: 1536px) {
+        .body-padding {
+          padding: 0 var(--body-padding-2xl);
+        }
+        .body-padding-l {
+          padding-left: var(--body-padding-2xl);
+        }
+        .body-padding-r {
+          padding-right: var(--body-padding-2xl);
+        }
+        p {
+          font-size: large;
+        }
+      }
+      @media screen and (min-width: 1736px) {
+        .body-padding {
+          padding: 0 var(--body-padding-3xl);
+        }
+        .body-padding-l {
+          padding-left: var(--body-padding-3xl);
+        }
+        .body-padding-r {
+          padding-right: var(--body-padding-3xl);
+        }
+        p {
+          font-size: large;
+        }
+      }
+      h1 {
+        font-size: 2rem !important;
+      }
+    </style>
+  </head>
+
+  <body class="">
+    <header class="w-full h-full relative">
+      <div class="w-full h-full absolute -z-10 inset-0">
+        <img
+          src="./assets/images/blog-banner.png"
+          class="w-full h-full object-cover"
+          alt="logo"
+        />
+      </div>
+      <div class="body-padding mx-auto py-12 lg:py-32">
+        <div class="w-[70%] lg:w-max border-b-2 pb-12">
+          <img
+            src="./assets/images/Logo.png"
+            alt="logo"
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <div class="text-white space-y-4 pt-12">
+          <h2 class="text-3xl font-light">Infra360 Insights</h2>
+          <h1 class="text-5xl font-semibold">The Cloud Chronicles</h1>
+        </div>
+      </div>
+    </header>
+    <section class="body-padding mx-auto">
+      <div class="">
+        <div class="text-center space-y-4 flex-1 py-12 lg:py-12 lg:py-24">
+          <h2 class="uppercase text-3xl font-bold">Welcome note</h2>
+          <p class="text-xl">
+            Welcome to the latest edition of the Infra360 newsletter!
+            <br />
+            <br />
+            This month, we delve into the latest trends in cloud computing,
+            share insights on successful migration strategies, and provide
+            updates on our newest features and services.
+          </p>
+        </div>
+        <div class="mx-auto w-3/4 h-12 bg-[#216bcf]"></div>
+      </div>
+    </section>
+    <section class="relative">
+      <div class="h-[300px] bg-gray-200 w-full absolute inset-0 -z-0"></div>
+      <div class="body-padding mx-auto pt-12 md:pt-24 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+          <div class="">
+            <div class="w-full">
+              <img
+                src="./assets/images/blog1.png"
+                class="w-full h-full object-cover"
+                alt="Blog image"
+              />
+            </div>
+            <div class="mt-8">
+              <p class="text-lg font-semibold">Featured Article</p>
+              <h1 class="text-4xl text-[#216bcf] font-semibold mt-2">
+                Unlock the power of Cloud FinOps: Maximize your cloud
+                investments with expert services
+              </h1>
+              <p class="mt-6 font-light">
+                Cloud computing has developed the framework for modern
+                businesses in a very fast-paced digital economy, providing
+                unparalleled flexibility, scalability, and innovation but
+                extreme financial challenges. Yet, how to manage and optimize
+                cloud expenditures is the most critical function that CFOs and
+                CTOs oversee for cloud-native organizations with
+                mission-critical applications. In contrast to cloud computing,
+                Cloud FinOps is the strategic approach to financial management
+                in the cloud. This discipline effectively bridges the gap
+                between finance, operations, and engineering from a business and
+                technical standpoint.
+                <br />
+                <br />
+                In this blog, we will further detail Cloud FinOps in actionable
+                insight and strategy so readers like yourself can reap the full
+                benefits of their investments in the cloud.
+              </p>
+              <a href="" class="mt-6">Read more</a>
+            </div>
+          </div>
+          <div class="">
+            <div class="w-full">
+              <img
+                src="./assets/images/blog2.png"
+                class="w-full h-full object-cover"
+                alt="Blog image"
+              />
+            </div>
+            <div class="mt-8">
+              <p class="text-lg font-semibold">Case Study</p>
+              <h1 class="text-4xl text-[#216bcf] font-semibold mt-2">
+                Revolutionizing Financial Solutions for Pakistan's SMEs through
+                Digital Innovation
+              </h1>
+              <p class="mt-6 font-light">
+                CreditBook has been instrumental in revolutionizing the
+                financial landscape for small and medium enterprises (SMEs) in
+                Pakistan. By leveraging cutting-edge digital technology,
+                CreditBook provides streamlined and effective financial
+                solutions that empower SMEs to manage their finances more
+                effectively. The company's innovative platform facilitates
+                seamless cash flow management and access to financing,
+                addressing the critical needs of the underserved SME sector.
+                <br />
+                <br />
+                With ambitious plans for expansion and a commitment to
+                continuous improvement, CreditBook is poised to make a
+                significant impact on the fintech industry in Pakistan and
+                beyond.
+              </p>
+              <a href="" class="mt-6">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-32">
+      <div class="grid lg:grid-cols-2 items-center">
+        <div class="py-12 lg:py-24 body-padding-l body-padding-r bg-[#f1f1f1]">
+          <h1 class="font-semibold">Key Cloud Security Challenges</h1>
+          <div class="">
+            <div class="mt-12 flex gap-12">
+              <div
+                class="h-[75px] lg:h-[150px] aspect-square p-4 md:p-8 bg-[#7db9e8]"
+              >
+                <img
+                  src="./assets/images/Layer 33.png"
+                  class="h-full w-full object-contain"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2 class="text-2xl font-semibold">Cloud Data Breaches</h2>
+                <p class="mt-4">
+                  Data breaches can lead to severe financial and reputational
+                  damage. For instance, the 2019 Capital One breach affected
+                  over 100 million customers and resulted in an $80 million
+                  settlement. This incident underscores the importance of
+                  thorough cloud access management and stringent cloud
+                  compliance
+                </p>
+              </div>
+            </div>
+            <div class="mt-12 flex gap-12">
+              <div
+                class="h-[75px] lg:h-[150px] aspect-square p-4 md:p-8 bg-[#7db9e8]"
+              >
+                <img
+                  src="./assets/images/Layer 34.png"
+                  class="h-full w-full object-contain"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2 class="text-2xl font-semibold">Misconfigurations</h2>
+                <p class="mt-4">
+                  Misconfigurations are a leading cause of cloud security
+                  vulnerabilities. Regular scrutiny and proper security controls
+                  are essential to prevent these mistakes and protect your data.
+                </p>
+              </div>
+            </div>
+            <div class="mt-12 flex gap-12">
+              <div
+                class="h-[75px] lg:h-[150px] aspect-square p-4 md:p-8 bg-[#7db9e8]"
+              >
+                <img
+                  src="./assets/images/Layer 35.png"
+                  class="h-full w-full object-contain"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2 class="text-2xl font-semibold">
+                  Insufficient Access Management
+                </h2>
+                <p class="mt-4">
+                  Effective cloud access management is vital to ensure that only
+                  authorized individuals have access to sensitive data.
+                  Implementing strong access controls can prevent unauthorized
+                  access and potential breaches.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="py-12 lg:py-24 bg-[#0a1c4a] body-padding-r body-padding-l lg:pl-20 text-white"
+        >
+          <h1 class="font-semibold">How Infra360 Can Help</h1>
+          <p>
+            Infra360 offers comprehensive solutions to address these cloud
+            security challenges. Our services include:
+          </p>
+          <div class="mt-12">
+            <h1 class="font-semibold">Key Cloud Security Challenges</h1>
+            <div class="mt-12 flex gap-12">
+              <div
+                class="h-[75px] lg:h-[150px] aspect-square p-4 md:p-8 bg-[#7db9e8]"
+              >
+                <img
+                  src="./assets/images/Layer 36.png"
+                  class="h-full w-full object-contain"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2 class="text-2xl font-semibold">
+                  Advanced Cloud Security Risk Assessments
+                </h2>
+                <p class="text-lg mt-4 font-light">
+                  Identifying potential vulnerabilities and providing actionable
+                  insights to mitigate risks.
+                </p>
+              </div>
+            </div>
+            <div class="mt-12 flex gap-12">
+              <div
+                class="h-[75px] lg:h-[150px] aspect-square p-4 md:p-8 bg-[#7db9e8]"
+              >
+                <img
+                  src="./assets/images/Layer 37.png"
+                  class="h-full w-full object-contain"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2 class="text-2xl font-semibold">
+                  Customized Cloud Security Strategies
+                </h2>
+                <p class="mt-4 font-light">
+                  Tailoring security measures to fit the unique needs of your
+                  business.
+                </p>
+              </div>
+            </div>
+            <div class="mt-12 flex gap-12">
+              <div
+                class="h-[75px] lg:h-[150px] aspect-square p-4 md:p-8 bg-[#7db9e8]"
+              >
+                <img
+                  src="./assets/images/Layer 38.png"
+                  class="h-full w-full object-contain"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2 class="text-2xl font-semibold">
+                  Cloud Access Management Solutions
+                </h2>
+                <p class="mt-4 font-light">
+                  Ensuring strict access controls to protect sensitive data.
+                </p>
+              </div>
+            </div>
+            <div class="mt-12 flex gap-12">
+              <div
+                class="h-[75px] lg:h-[150px] aspect-square p-4 md:p-8 bg-[#7db9e8]"
+              >
+                <img
+                  src="./assets/images/Layer 39.png"
+                  class="h-full w-full object-contain"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2 class="text-2xl font-semibold">Cutting-Edge Technology</h2>
+                <p class="mt-4 font-light">
+                  Leveraging the latest advancements in cloud security to keep
+                  your organization protected.
+                </p>
+              </div>
+            </div>
+            <div class="mt-12 flex gap-12">
+              <div
+                class="h-[75px] lg:h-[150px] aspect-square p-4 md:p-8 bg-[#7db9e8]"
+              >
+                <img
+                  src="./assets/images/Layer 40.png"
+                  class="h-full w-full object-contain"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2 class="text-2xl font-semibold">
+                  Compliance with Industry Standards
+                </h2>
+                <p class="mt-4 font-light">
+                  Ensuring your organization meets regulatory requirements to
+                  minimize data breaches and strengthen overall security
+                  posture.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="body-padding py-12 lg:py-24 bg-[#333333]">
+      <div class="grid lg:grid-cols-2">
+        <div class="text-white">
+          <h1 class="text-white">Get In Touch</h1>
+          <p class="mt-12">
+            Thank you for being a valued part of the Infra360 community. Stay
+            tuned for more updates and insights in our next edition. If you have
+            any questions or feedback, feel free to reach out to us.
+          </p>
+        </div>
+        <div class="flex flex-col space-y-4 w-3/4 mt-8 lg:mt-0 lg:mx-auto">
+          <input type="text" placeholder="Name" name="name" class="p-2 ps-4" />
+          <input
+            type="text"
+            placeholder="Email"
+            name="email"
+            class="p-2 ps-4"
+          />
+          <input
+            type="submit"
+            name="Submit"
+            id="submit"
+            class="bg-gray-400 px-4 py-2 w-max"
+          />
+        </div>
+      </div>
+    </section>
+    <footer
+      class="body-padding text-white footer-bg bg-[#0a1c4a] py-12 lg:py-12 lg:py-24"
+    >
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div class="space-y-8">
+          <p>About Us</p>
+          <p class="text-gray-400">
+            We are passionate about helping tech enabled companies gain trust
+            and increase revenue by meeting their digital transformation goals.
+            Leveraging our expertise in cloud technologies we migrate, scale and
+            secure application in cloud to help your business stay ahead of
+            competition and grow exponentially.
+          </p>
+          <p>Unsubscribe</p>
+        </div>
+        <div class="space-y-8">
+          <p>Contact Us</p>
+          <div>
+            <p>Address:</p>
+            <p class="text-gray-400">102, Sector 28, Gurgaon</p>
+          </div>
+          <div>
+            <p>Phone Number and Email:</p>
+            <p class="text-gray-400">981901111</p>
+            <p class="text-gray-400">infra360.io</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="py-4 text-center text-white bg-[#111111]">
+      <p class="text-sm">Copyright © 2024 Infra360, All rights reserved</p>
+    </div>
+  </body>
+</html>
